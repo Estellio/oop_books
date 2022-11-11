@@ -1,5 +1,6 @@
 class UI{
     addBook(title, author, isbn) {
+
         const table = document.querySelector("table")
         const newRow = table.insertRow()
 

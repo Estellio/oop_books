@@ -1,5 +1,5 @@
 class LS{
-    getData(name){
+    getData(name) {
         let data;
         if (localStorage.getItem(name) === null){
             data = []
@@ -9,18 +9,18 @@ class LS{
         return data
     }
 
-    setData(name, data){
+    setData(name, data) {
         localStorage.setItem(name, JSON.stringify(data))
     }
 
-    addBook(book){
+    addBook(book) {
         let books = this.getData("books")
         books.push(book)
         this.setData("books", books)
         book.addedToLS()
     }
 
-    deleteBook(book){
+    deleteBook(book) {
         let books = this.getData("books")
         books.forEach(function (booksElement, booksIndex){
             if (booksElement.isbn === book) {

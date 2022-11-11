@@ -8,7 +8,6 @@ class Book{
     addedToUI() {
         console.log(`${this.title} was added to UI`)
     }
-
     addedToLS() {
         console.log(`${this.title} was added to LS`)
     }
